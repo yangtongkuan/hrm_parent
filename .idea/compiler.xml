@@ -7,6 +7,8 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="hrm_common" />
+        <module name="hrm_common_model" />
+        <module name="hrm_company" />
       </profile>
     </annotationProcessing>
   </component>
