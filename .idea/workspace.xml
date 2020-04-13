@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f38477a0-070c-4e20-983d-3c3a581f563c" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hrm_common/src/main/java/com/study/common/utils/IdWork.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -34,11 +30,34 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/hrm_company/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="318">
               <caret line="22" column="21" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="application.yml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/hrm_company/src/main/resources/application.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="206">
+              <caret line="15" selection-start-line="15" selection-end-line="15" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CompanyApplication.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/hrm_company/src/main/java/com/study/company/CompanyApplication.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="125">
+              <caret line="9" column="47" lean-forward="true" selection-start-line="9" selection-start-column="47" selection-end-line="9" selection-end-column="47" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#345#346#0" expanded="true" />
+                <element signature="e#381#382#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -86,6 +105,8 @@
         <option value="$PROJECT_DIR$/hrm_common_model/src/main/java/com/study/domain/company/Company.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/hrm_company/pom.xml" />
+        <option value="$PROJECT_DIR$/hrm_company/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/hrm_company/src/main/java/com/study/company/CompanyApplication.java" />
       </list>
     </option>
   </component>
@@ -158,18 +179,45 @@
             <path>
               <item name="hrm_parent" type="b2602c69:ProjectViewProjectNode" />
               <item name="hrm_parent" type="462c0819:PsiDirectoryNode" />
-              <item name="hrm_common" type="462c0819:PsiDirectoryNode" />
+              <item name="hrm_company" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="hrm_parent" type="b2602c69:ProjectViewProjectNode" />
               <item name="hrm_parent" type="462c0819:PsiDirectoryNode" />
-              <item name="hrm_common_model" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="hrm_parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hrm_parent" type="462c0819:PsiDirectoryNode" />
-              <item name="hrm_common_model" type="462c0819:PsiDirectoryNode" />
+              <item name="hrm_company" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hrm_parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hrm_parent" type="462c0819:PsiDirectoryNode" />
+              <item name="hrm_company" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hrm_parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hrm_parent" type="462c0819:PsiDirectoryNode" />
+              <item name="hrm_company" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hrm_parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hrm_parent" type="462c0819:PsiDirectoryNode" />
+              <item name="hrm_company" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="company" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hrm_parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hrm_parent" type="462c0819:PsiDirectoryNode" />
+              <item name="hrm_company" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -283,7 +331,7 @@
       <workItem from="1586789677567" duration="150000" />
       <workItem from="1586790088603" duration="387000" />
       <workItem from="1586790514236" duration="164000" />
-      <workItem from="1586790691049" duration="1207000" />
+      <workItem from="1586790691049" duration="1694000" />
     </task>
     <task id="LOCAL-00001" summary="idwork">
       <created>1586440550000</created>
@@ -292,14 +340,22 @@
       <option name="project" value="LOCAL" />
       <updated>1586440550001</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="company init">
+      <created>1586791932538</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1586791932538</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9242000" />
+    <option name="totallyTimeSpent" value="9729000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
@@ -343,7 +399,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="idwork" />
-    <option name="LAST_COMMIT_MESSAGE" value="idwork" />
+    <MESSAGE value="company init" />
+    <option name="LAST_COMMIT_MESSAGE" value="company init" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/hrm_common_model/src/main/java/com/study/domain/company/Company.java">
@@ -616,6 +673,25 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/hrm_company/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="206">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hrm_company/src/main/java/com/study/company/CompanyApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="9" column="47" lean-forward="true" selection-start-line="9" selection-start-column="47" selection-end-line="9" selection-end-column="47" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#345#346#0" expanded="true" />
+            <element signature="e#381#382#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
   </component>
   <component name="masterDetails">
     <states>
@@ -668,7 +744,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>hrm_common</last-edited>
+          <last-edited>hrm_company</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
