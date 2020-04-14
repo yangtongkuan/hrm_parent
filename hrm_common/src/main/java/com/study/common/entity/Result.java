@@ -1,5 +1,7 @@
 package com.study.common.entity;
 
+import io.swagger.annotations.ApiModel;
+import io.swagger.annotations.ApiModelProperty;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -15,9 +17,14 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 public class Result<T> {
+
+    @ApiModelProperty("成功")
     private boolean success;           // 成功信息
+    @ApiModelProperty("状态码")
     private Integer code;               // code
+    @ApiModelProperty("提示信息")
     private String message;             // 提示信息
+    @ApiModelProperty("数据信息")
     private T data;                     // 数据
 
     public Result(ResultCode code) {
