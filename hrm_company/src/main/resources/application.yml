@@ -7,10 +7,19 @@ spring:
     name: hrm-cpmpany
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
-    url: jdb:mysql://localhost:3306/hrm?useUnicode=true&characterEncoding=utf8
+    url: jdbc:mysql://39.105.189.212:3306/hrm?useUnicode=true&characterEncoding=UTF-8&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
     username: root
     password: sdbs
   jpa:
     database: mysql
     show-sql: true
     open-in-view: true
+
+#  swagger2 项目配置
+swagger2:
+  author: yangtk
+  url:
+  email: 1061203621@qq.com
+  title: 公司Api文档
+  desc: 公司管理系统
+  version: v1.0
