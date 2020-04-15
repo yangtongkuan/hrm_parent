@@ -1,4 +1,4 @@
-package com.study.company.config.knife4j;
+package com.study.common.knife4j;
 
 import lombok.Data;
 import org.springframework.boot.context.properties.ConfigurationProperties;

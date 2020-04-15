@@ -1,4 +1,4 @@
-package com.study.company.config.knife4j;
+package com.study.common.knife4j;
 
 import com.github.xiaoymin.knife4j.spring.annotations.EnableKnife4j;
 import org.springframework.beans.factory.annotation.Autowired;

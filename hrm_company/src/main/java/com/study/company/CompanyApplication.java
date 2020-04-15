@@ -8,7 +8,7 @@ import org.springframework.context.annotation.Bean;
 
 import javax.persistence.Entity;
 
-@SpringBootApplication
+@SpringBootApplication(scanBasePackages = "com.study")
 @EntityScan(value = "com.study.domain.company")
 public class CompanyApplication {
     public static void main(String[] args) {

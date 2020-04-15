@@ -4,6 +4,7 @@ import com.github.xiaoymin.knife4j.annotations.ApiOperationSupport;
 import com.github.xiaoymin.knife4j.annotations.ApiSort;
 import com.study.common.entity.Result;
 import com.study.common.entity.ResultCode;
+import com.study.common.exception.CommonException;
 import com.study.company.service.CompanyService;
 import com.study.domain.company.Company;
 import io.swagger.annotations.Api;
@@ -28,7 +29,7 @@ public class CompanyController {
     // todo  添加企业
     @PostMapping(value = "")
     @ApiOperation("添加企业")
-    @ApiOperationSupport(ignoreParameters = {"company.id","company.createTime"})
+    @ApiOperationSupport(ignoreParameters = {"company.id", "company.createTime"})
     public Result<Company> create(@RequestBody Company company) {
         company = companyService.create(company);
         return new Result<Company>(ResultCode.SUCCESS, company);
@@ -37,9 +38,12 @@ public class CompanyController {
     // todo: 根据id更新企业信息
     @PutMapping("/{id}")
     @ApiOperation("更新企业")
-    @ApiParam(name = "id",required = true)
-    public Result<Company> modify(@PathVariable(name = "id") String id, @RequestBody Company company) {
+    @ApiParam(name = "id", required = true)
+    public Result<Company> modify(@PathVariable(name = "id") String id, @RequestBody Company company) throws CommonException {
         Company company_db = companyService.findById(id);
+        if (company_db == null) {
+            throw new CommonException(ResultCode.NOFUND);
+        }
         company_db.setName(company.getName());
         company_db.setRemarks(company.getRemarks());
         company_db.setState(company.getState());
@@ -62,7 +66,7 @@ public class CompanyController {
     @ApiParam()
     public Result<Company> findById(@PathVariable(name = "id") String id) {
         Company company = companyService.findById(id);
-        return new Result<Company>(ResultCode.SUCCESS,company);
+        return new Result<Company>(ResultCode.SUCCESS, company);
     }
 
     // todo: 获取企业列表

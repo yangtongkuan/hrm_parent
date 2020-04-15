@@ -1,6 +1,6 @@
 package com.study.common.entity;
 
-import io.swagger.annotations.ApiModel;
+import com.fasterxml.jackson.annotation.JsonInclude;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -16,6 +16,7 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
+@JsonInclude(JsonInclude.Include.NON_NULL) // 忽略空值信息
 public class Result<T> {
 
     @ApiModelProperty("成功")
@@ -39,6 +40,7 @@ public class Result<T> {
         this.message = code.message;
         this.data = data;
     }
+
     public Result(boolean success, int code, String message) {
         this(success, code, message, null);
     }

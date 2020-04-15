@@ -20,6 +20,7 @@ public enum ResultCode {
     FAIL(false, 10001, "操作失败"),
     UNAUTHENTICATED(false,10002,"您还未登陆"),
     UNAUTHORISE(false,10003,"您还未登陆"),
+    NOFUND(false, 10004, "操作失败"),
     SERVER_ERROR(false,99999,"抱歉系统繁忙,请稍后重试~");
 
     boolean success;

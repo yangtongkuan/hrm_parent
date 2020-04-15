@@ -36,7 +36,7 @@ public class CompanyService {
 
     // todo ：
     public Company findById(String id) {
-        return companyDao.findById(id).get();
+        return companyDao.findById(id).orElse(null);
     }
 
     // todo:
@@ -45,7 +45,7 @@ public class CompanyService {
     }
 
     // todo : findAll
-    public List<Company> findAll(){
+    public List<Company> findAll() {
         return companyDao.findAll();
     }
 
