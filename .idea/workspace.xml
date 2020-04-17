@@ -3,11 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="f38477a0-070c-4e20-983d-3c3a581f563c" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hrm_common/src/main/java/com/study/common/entity/Result.java" beforeDir="false" afterPath="$PROJECT_DIR$/hrm_common/src/main/java/com/study/common/entity/Result.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hrm_common/src/main/java/com/study/common/entity/ResultCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/hrm_common/src/main/java/com/study/common/entity/ResultCode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hrm_company/src/main/java/com/study/company/CompanyApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/hrm_company/src/main/java/com/study/company/CompanyApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hrm_company/src/main/java/com/study/company/controller/CompanyController.java" beforeDir="false" afterPath="$PROJECT_DIR$/hrm_company/src/main/java/com/study/company/controller/CompanyController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hrm_company/src/main/java/com/study/company/service/CompanyService.java" beforeDir="false" afterPath="$PROJECT_DIR$/hrm_company/src/main/java/com/study/company/service/CompanyService.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -23,11 +18,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="CompanyController.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="CompanyController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/hrm_company/src/main/java/com/study/company/controller/CompanyController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="89">
-              <caret line="43" selection-start-line="43" selection-end-line="43" />
+            <state relative-caret-position="239">
+              <caret line="56" column="5" selection-start-line="49" selection-start-column="10" selection-end-line="56" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -105,11 +100,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/hrm_common/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="128">
-              <caret line="16" column="39" selection-start-line="16" selection-start-column="39" selection-end-line="16" selection-end-column="39" />
+            <state relative-caret-position="61">
+              <caret line="22" column="21" lean-forward="true" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -529,7 +524,7 @@
       <workItem from="1586790514236" duration="164000" />
       <workItem from="1586790691049" duration="1724000" />
       <workItem from="1586869838141" duration="5549000" />
-      <workItem from="1586959907614" duration="2557000" />
+      <workItem from="1586959907614" duration="2715000" />
     </task>
     <task id="LOCAL-00001" summary="idwork">
       <created>1586440550000</created>
@@ -559,11 +554,18 @@
       <option name="project" value="LOCAL" />
       <updated>1586875748252</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="全局异常处理~~ 项目结构调整">
+      <created>1586962617012</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1586962617013</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17865000" />
+    <option name="totallyTimeSpent" value="18023000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -586,11 +588,11 @@
       <window_info id="Image Layers" order="2" />
       <window_info anchor="bottom" id="Java Enterprise" order="7" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
-      <window_info anchor="bottom" id="Version Control" order="7" visible="true" weight="0.12776831" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="7" visible="true" weight="0.43100512" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.16013628" />
       <window_info anchor="bottom" id="Spring" order="7" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.29425114" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.29425114" />
       <window_info anchor="right" id="Bean Validation" order="3" />
       <window_info id="Web" order="2" side_tool="true" />
       <window_info anchor="right" id="Theme Preview" order="3" />
@@ -647,23 +649,11 @@
     <MESSAGE value="idwork" />
     <MESSAGE value="company init" />
     <MESSAGE value="company controller - knife4j" />
-    <option name="LAST_COMMIT_MESSAGE" value="company controller - knife4j" />
+    <MESSAGE value="全局异常处理~~ 项目结构调整" />
+    <option name="LAST_COMMIT_MESSAGE" value="全局异常处理~~ 项目结构调整" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/hrm_company/src/main/java/com/study/company/controller/CompanyController.java</url>
-          <line>42</line>
-          <properties />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/hrm_company/src/main/java/com/study/company/controller/CompanyController.java</url>
-          <line>43</line>
-          <properties />
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
       <option name="time" value="3" />
     </breakpoint-manager>
   </component>
@@ -1011,16 +1001,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hrm_company/src/main/java/com/study/company/controller/CompanyController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="89">
-          <caret line="43" selection-start-line="43" selection-end-line="43" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/hrm_common/src/main/java/com/study/common/handler/GlobalExceptionHandler.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="156">
@@ -1043,8 +1023,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/hrm_common/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="16" column="39" selection-start-line="16" selection-start-column="39" selection-end-line="16" selection-end-column="39" />
+        <state relative-caret-position="61">
+          <caret line="22" column="21" lean-forward="true" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hrm_company/src/main/java/com/study/company/controller/CompanyController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="239">
+          <caret line="56" column="5" selection-start-line="49" selection-start-column="10" selection-end-line="56" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
