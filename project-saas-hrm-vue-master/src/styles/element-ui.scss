@@ -1,4 +1,13 @@
  //覆盖一些element-ui样式
+ // todo 解决table表头倾斜问题
+ body .el-table th.gutter{
+  display: table-cell!important;
+}
+
+body .el-table colgroup.gutter{
+  display: table-cell!important;
+}
+// end
 
  .el-breadcrumb__inner, .el-breadcrumb__inner a{
   font-weight: 400!important;
