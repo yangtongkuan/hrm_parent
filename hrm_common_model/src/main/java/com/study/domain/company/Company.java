@@ -1,5 +1,6 @@
 package com.study.domain.company;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -30,6 +31,7 @@ public class Company implements Serializable {
     private String version;                 // 当前版本
     @ApiModelProperty(value = "续期时间")
     private Date renewalDate;               // 续期时间
+    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss")
     @ApiModelProperty(value = "到期时间")
     private Date expirationDate;            // 到期时间
     @ApiModelProperty(value = "公司地区")
@@ -56,6 +58,7 @@ public class Company implements Serializable {
     private Integer state;                  // 状态
     @ApiModelProperty(value = "余额")
     private Double balance;                 // 余额
+    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss", timezone = "GMT+8")
     @ApiModelProperty(value = "创建时间")
     private Date createTime;                // 创建时间
 }

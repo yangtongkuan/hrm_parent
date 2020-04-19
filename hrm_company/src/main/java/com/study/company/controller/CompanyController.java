@@ -20,6 +20,7 @@ import java.util.List;
 @Api(value = "企业管理", tags = "企业管理")
 @ApiSort(1)
 @RestController
+@CrossOrigin    // 处理跨域问题
 @RequestMapping("/company")
 public class CompanyController {
 

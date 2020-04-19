@@ -26,6 +26,11 @@ export default [
         component: _import('saas-clients/pages/index'),
         name: 'saas-clients-index',
         meta: {title: 'SAAS企业管理', icon: 'component', noCache: true}
+      }, {
+        path: 'detail/:id',
+        component: _import('saas-clients/pages/detail'),
+        name: 'saas-clients-detail',
+        meta: {title: 'SAAS企业详情', icon: 'component', noCache: true}
       }
     ]
   }
