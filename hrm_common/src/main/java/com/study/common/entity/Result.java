@@ -34,6 +34,10 @@ public class Result<T> {
         this.message = code.message;
     }
 
+    public Result(T data) {
+        this(ResultCode.SUCCESS, data);
+    }
+
     public Result(ResultCode code, T data) {
         this.success = code.success;
         this.code = code.code;
@@ -43,5 +47,10 @@ public class Result<T> {
 
     public Result(boolean success, int code, String message) {
         this(success, code, message, null);
+    }
+
+    // 成功
+    public static Result SUCCESS() {
+        return new Result(ResultCode.SUCCESS);
     }
 }
