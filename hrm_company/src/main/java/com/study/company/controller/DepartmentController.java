@@ -21,6 +21,7 @@ import java.util.List;
 @RequestMapping(value = "/company")
 @Api(tags = "部门管理")
 @ApiSort(value = 2)
+@CrossOrigin
 public class DepartmentController {
 
     @Autowired
