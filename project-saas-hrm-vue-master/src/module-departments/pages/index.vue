@@ -85,6 +85,9 @@
                                 <el-dropdown-item>
                                   <el-button type="text" @click="handleList()">查看待分配员工</el-button>
                                 </el-dropdown-item>
+                                <el-dropdown-item>
+                                  <el-button type="text" @click="handlDel(data)">删除部门</el-button>
+                                </el-dropdown-item>
                               </el-dropdown-menu>
                             </el-dropdown>
                           </div>
@@ -96,44 +99,25 @@
             </div>    
       </el-card>
     </div>
-    <!-- 添加部门 -->
-    <el-dialog title="编辑部门" :visible.sync="dialogFormVisible">
-      <!--数据模型对象-->
-      <el-form :model="dept" label-width="120px">
-        <el-form-item label="部门名称">
-          <el-input v-model="dept.name" autocomplete="off"></el-input>
-        </el-form-item>
-        <el-form-item label="部门编码" >
-          <el-input v-model="dept.code" autocomplete="off"></el-input>
-        </el-form-item>
-        <el-form-item label="部门负责人">
-          <el-input v-model="dept.manager" autocomplete="off"></el-input>
-        </el-form-item>
-        <el-form-item label="部门简介">
-          <el-input v-model="dept.introduce" autocomplete="off"></el-input>
-        </el-form-item>
-      </el-form>
-      <div slot="footer" class="dialog-footer">
-        <el-button @click="dialogFormVisible = false">取 消</el-button>
-        <el-button type="primary" @click="saveDept">确 定</el-button>
-      </div>
-    </el-dialog>
+   
+    <dept-add ref="addDept"></dept-add>
 </div>
 </template>
  
 <!-- 引入组件 -->
 <script>
-import {list, saveOrUpdate, find} from '@/api/base/dept'
+import {list, saveOrUpdate, find, deleteById} from '@/api/base/dept'
 import commonApi from '@/utils/common'
+import deptAdd from './../components/addDept'
 export default {
   data() {
     return {
       activeName: 'first', 
       departData: {},
-      dialogFormVisible: false,
-      depts: [],
-      dept: {},
-      parentId: ''
+      depts: []
+      // dept: {},
+      // dialogFormVisible: false,
+      // parentId: ''
     }
   },
   methods: {
@@ -143,27 +127,40 @@ export default {
         this.depts = commonApi.transformTozTreeFormat(this.departData.depts)
       })
     },
-    handlAdd: function(parentId) {
-      this.parentId = parentId
-      this.dept = {}
-      this.dept.parentId = parentId
-      this.dialogFormVisible = true
-      console.log(this.parentId)
-    },
-    saveDept: function() {
-      saveOrUpdate(this.dept).then(res => {
-        if (res.data.success) {
-          this.getList()
-        }
+    handlDel: function(data) {
+      this.$confirm(`确认删除部门:${data.name}?`, '删除部门', {
+        confirmButtonText: '确定',
+        cancelButtonText: '取消',
+        type: 'warning'
+      }).then(() => {
+        deleteById(data).then(res => {
+          if (res.data.success) {
+            this.getList()
+          }
+          this.$message({
+            type: res.data.success ? 'success' : 'error',
+            message: res.data.message
+          })
+        })
+      }).catch(() => {      
       })
-      this.dialogFormVisible = false
+    },
+    handlAdd: function(parentId) {
+      // this.parentId = parentId
+      this.$refs.addDept.dept = {}
+      this.$refs.addDept.dept.parentId = parentId
+      this.$refs.addDept.dialogFormVisible = true
+      console.log(this.parentId)
     },
     handlUpdate: function(id) {
       find({id: id}).then(res => {
-        this.dept = res.data.data
-        this.dialogFormVisible = true 
+        this.$refs.addDept.dept = res.data.data
+        this.$refs.addDept.dialogFormVisible = true 
       })
     }
+  },
+  components: {
+    deptAdd
   },
   created: function() {
     this.getList()
